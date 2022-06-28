@@ -1,204 +1,110 @@
+is_day=False
+lights_on= not is_day
 
-"""
+print("Daytime?")
+print(is_day)
 
-sayi=2565849
-sayiondalık=25.6546
-complex=4+5j
-metin="selim"
+print("Lights on ?")
+print(lights_on)
 
-LISTE1=["LSIT1","LIST2","LIST3","LIST4"]
+#track sales data
+stock=600 
+jeans_old = 500
+target = 500
+target_hit = jeans_old = target 
+print("Hit jeans sale target : ")
+print(target_hit)
 
-DEMET=("TUPLE1","TUPLE2","TUPLE3","TUPLE4","TUPLE5")
+current_stock= stock - jeans_old 
+in_stock = current_stock !=0
+print("Jeans in stock: ")
+print(in_stock)
 
-SOZLUK={"DİCTİONARY": "DİCT","DİCTİONARY":"DİCT2","DİCTİONARY":"DİCT3"}
+#heart rate 
+heart_rate = 77 
 
-sayi=25
-METİN="8"
-print(METİN[::1])
-print(type(sayi))
-METİN=int(METİN)
-sayi=str(sayi)
-print(type(sayi))
-print(METİN*2)
-print(5**3)
-print(4//3)
-print(5%4)
-#== != > < >= <= is is not in not in 
-# 4*=3 4+=3 or veya and ve 
+too_low= heart_rate <60 
+too_high= heart_rate>100
 
-vizePuani=80
-finalPunai=70
-sonuc=(0.4*vizePuani)+(finalPunai*0.6)
-print(sonuc>=60)
-plaka="06"
-print(type(plaka))
-#sehir="Ankara"
-sehir="İstanbul"
-print(sehir)
-sehir="Ankara"
-sehir="İstanbul"
-print(sehir!="istanbul")
+print("Heart rate low:")
+print(too_low)
 
-ad,soyad="Mehmet","Çınar"
-devamsızlıksüresi=45
-mesaj=f"Sn{ad}{soyad} öğrencinizin toplam devamsızlığı {devamsızlıksüresi} gündür."
-print(mesaj)
+print("Heart rate high: ")
+print(too_high)
 
-hitapşekli="Sayın"
-abonenumarası=4848798
-tüketimdönemi=2020
-tüketimtutarı=4500
-mesaj=f"{hitapşekli} {abonenumarası} nolu abonemiz {tüketimdönemi} dönemi faturanız {tüketimtutarı} Tl dir.Python Belediyesi"
-print(mesaj)
-print("Kahramanmaraş'ın dondurması meşhurdur.")
-print("Kahramanmaraş madalya \"lı tek şehirdir")
-print("1.satır\n 2.satır\n 3.satır")
-print("Pazartesi \t salı \t çarşamba") 
-print("Merhaba !",end=" ")
-print("Python")
+#frequency
+frequency = "once a week"
+intensity = "low"
 
-print("Merhaba!",end=",")
-print("Python")
+highly_active = frequency == "daily"
+print("Highly active user: ")
+print(highly_active)
 
-print("pazartesi","salı","çarşamba","perşembe","cuma",sep="-")
-print("pazartesi","salı","çarşamba","perşembe","cuma",sep="-fenerbahçe-")
+highly_intensity=intensity=="high"
+print("High intensity sports: ")
+print(highly_intensity)
 
-a,b,c=5,6,9
-print("girdiğiniz",a,b,"ve",c,"değerlerinin toplamı: ",a+b+c,"dir")
-print("çıktı işlemi {} {} {}".format(1,2,3))
-a,b,c=5,6,9
-print("girdiğiniz {},{} ve {} değerlerinin toplamı= {} dir".format(a,b,c,a+b+c))
-print("{1}{0}{2}".format(10,"Python",20))
+#double lare qalqulatery
+ride_type= "Black"
+credits = 4 
 
-print("Memleket isterim,\n Gök mavi,dal yeşil,tarla sarı olsun,")
-print("Memleket isterim,","Gök mavi,dal yeşil,tarla sarı olsun,")
+ride_price =0
+final_price=0
 
-print("Memleket isterim,")
-print("Gök mavi,dal yeşil","tarla sarı olsun")
-
-print("Memleket","isterim","Gök mavi","dal","yeşil",sep="fenerbahçe")
-
-print("   *")
-print("  * * ")
-print(" *   *")
-print("*      *")
-print("***     ***")
-print("  *     *")
-print("  *     *")
-print("  *******")
-not1 = 55 
-not2 = 100 
-print("1.Sınav Notu:{} \n2.sınav Notu:{}".format(not1,not2))
-
-isim = input("isminizi giriniz: ")
-print("merhaba! ",isim)
-
-sayi=int(input("sayi gir"))
-if(sayi>0):
-         print("Sayi pozitif")
-elif(sayi<0):
-    print("sayi negatif")
+if ride_type =="DooberX":
+    ride_price=20.5
+elif ride_type=="Black":
+    ride_price= 37.9
 else:
-    print("sayı 0")
-"""
-"""
-sınav1=int(input("sınav1"))
-sınav2=int(input("sınav2"))
-ortalama=sınav1+sınav2/2
-if(ortalama>50):
-    print("geçti")
-elif(ortalama<50):
-    print("kaldı")
-"""
-"""
-sayi=int(input("sayi1:"))
-sayi2=int(input("sayi2:"))
-if(sayi>sayi2):
-     print("sayi1 büyüktür")
-elif(sayi2>sayi):
-     print("sayi2 büyüktür")
-else:
-     print("eşittir")
-"""
-"""
-harfler=["a","e","i","o","i","u"]
-print(harfler.count("i"))
-print(harfler.count("p"))
+    ride_price = 18.7 
+print(f"Ride price{ride_price}")
 
-liste1,liste2,liste3,liste4=["a"],["b"],["c"],["d"]
-print(liste1)
-print(liste2)
+if credits > 0 :
+    final_price = ride_price - credits
 
-liste1,liste2=["a"],["b"]
-liste3=liste1+liste2
-print(liste3)
-"""
-"""
-liste=[34,1,56,334,23,2,3,19]
-liste=liste.reverse()
-liste=liste.sort()
-print(liste)
-"""
-"""
-listem=["Merhaba","Türkiye","Nasılsın","Tebrikler"]
-print(listem[-1])
-print(listem[-3])
-print(listem[-4])
+print(f"Final price:{final_price} ")
+#calculater
+account = 100 
+interest_rate = 0.004
+years =3 
+print(f"Initial amount: {account}")
+counter = 1 
+while counter <= years :
+    accrued_interest = account * interest_rate 
+    account += accrued_interest 
+    print(f"year {counter}:{account}")
+    counter +=1
 
-liste=[1,2,3,4,5,6,7]
-print(liste[1:4])
-print(liste[0:4])
-print(liste[3:])
-print(liste[0:])
+#new product rating 
+flavors = ["cinammon","pumpkin","apple pie"] 
+print(f"New flawors: {flavors}")
 
-isimler=["ali","veli","ayşe"]
-soyisimler=["türk","izci","erel"]
-ad_soy1=isimler[0]+" "+soyisimler[0]
-ad_soy2=isimler[1]+" "+soyisimler[1]
-ad_soy3=isimler[2]+" "+soyisimler[2]
-print(ad_soy1)
-print(ad_soy2)
-print(ad_soy3)
+ratings = [4,2.5,3]
+print(f"Consumer rating: {ratings}")
+print(ratings)
 
-liste=["bir","iki","dört"]
-liste.insert(2,"üç")
-liste.insert(4,"beş")
+passed = [True,False,True]
+print("Release: ")
+print(passed)
 
-liste=["birinci veri","ikinci veri","üçüncü veri", "dördüncü veri","beşinci veri"]
-print(liste[0])
-print(liste[4])
-"""
-                     
-"""
-a=int(input("ağacın yükseklliği"))
-b=a
-for i in range(1,a+1):
-    print(b*" ",(2*i-1)*"*")
-    b-=1
-"""
-"""
-liste=[5,9,7,1,2,3,6,4]
-buyuk=0
-kucuk=999
-for i in range(len(liste)):
-    if liste [i]> buyuk:
-        buyuk=liste[i]
-    if liste[i]<kucuk:
-        kucuk=liste[i]
-print(f"girilensayıların en buyugu = {buyuk} en kucugu {kucuk}")        
-"""
-"""
-import turtle
-yıldız = turtle.Turtle()
-for i in range(5):
- yıldız.forward(100)
- yıldız.right(144)
-turtle.done()
-"""
-import time
-for i in range(1,21):
-    time.sleep(0.5)
-    print(i)
+#Stocks
+apple_stocks=[298.18,304.14,289.23]
+apple_stocks[0]=310
+print("latest value")
+print(apple_stocks[0])
+
+apple_stocks[1]=310
+print("highest value:")
+print(apple_stocks[1])
+
+print("lowest values: ")
+print(apple_stocks[2])
+
+#humidity
+humidity_level = [87,83,89,88,87]
+humidity_level.insert(0,90)
+humidity_level.pop()
+print(humidity_level)
 
 
 
