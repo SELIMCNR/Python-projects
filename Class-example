@@ -1,0 +1,20 @@
+class Cars :
+    Prıce=300000
+    Error="Engine, personal fault"
+    def __init__(this,model,years,color):
+        this.model=model
+        this.years=years
+        this.color=color        
+
+
+
+
+c1 = Cars("Toyota", 2005, "blue")
+c2 = Cars("Ford", 2007, "white")
+c3 = Cars("Bmw", 2011, "black")
+
+
+
+print(f"Cars model: {c1.model},year: {c1.years},color: {c1.color},Prıce = {c1.Prıce},carsError:{c1.Error}")
+print(f"Cars model: {c2.model},year: {c2.years},color: {c2.color},Prıce = {c1.Prıce} ")
+print(f"Cars model: {c3.model},year: {c3.years},color: {c3.color},Prıce = {c1.Prıce} ")
